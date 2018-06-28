@@ -1,5 +1,8 @@
 import xml.etree.ElementTree as ET
 import json
+from shapely import geometry 
+from urllib.parse import urlparse
+import boto3
 import rasterio
 from rasterio import features
 
@@ -44,22 +47,11 @@ class spacenetStacItem:
         with rasterio.open(self.rasterPath) as dataset:
             profile = dataset.profile
                 # Read the dataset's valid data mask as a ndarray.
-            mask = dataset.dataset_mask()
-            # Extract feature shapes and values from the array.
-            for geom, val in features.shapes(
-                    mask, transform=dataset.transform):
-
-                # Transform shapes from the dataset's own coordinate
-                # reference system to CRS84 (EPSG:4326).
-                geom = rasterio.warp.transform_geom(
-                    dataset.crs, 'EPSG:4326', geom, precision=6)
-
-                # Print GeoJSON shapes to stdout.
-                print(geom)
+            geom = geometry.box(*dataset.bounds)
         
-        self.geometry=geom
+        self.geometry=json.loads(json.dumps(geometry.mapping(geom)))
         
-        return geom
+        return json.loads(json.dumps(geometry.mapping(geom)))
         
     
     def createAssetList(self):
@@ -68,8 +60,22 @@ class spacenetStacItem:
     
     def createProperties_EO(self, imdPath):
         eo_prop_dict = {}
-        tree = ET.parse(imdPath)
-        root = tree.getroot()
+        
+        
+        o = urlparse(imdPath)
+        if o.scheme == 's3':
+            s3 = boto3.resource("s3")
+            bucket = o.netloc
+            key = o.path.lstrip('/')
+            obj = s3.Object(bucket, key)
+            body = obj.get()['Body'].read()
+            root = ET.fromstring(body)
+            
+        else:
+            
+            tree = ET.parse(imdPath)
+            root = tree.getroot()
+            
         self.metaDataStruct = iterate_OverXML(root, recursionTagList=['IMD', 'IMAGE'])
         self.eoDict = self.processMetaData_To_Properties(self.metaDataStruct, self.provider, self.license)
         
