@@ -1,0 +1,138 @@
+{
+  "name": "DG_WORLDVIEW02_LV1B_MUL",
+  "platform": "WORLDVIEW02",
+  "sensor": "multiband sensor",
+  "dg:productLevel": "LV1B",
+  "dg:product": "WORLDVIEW02_LV1B",
+  "eo:bands": {
+    "coastal": {
+      "common_name": "coastal",
+      "gsd": 2.047,
+      "center_wavelength": 0.427,
+      "full_width_half_maximum": 0.062
+    },
+    "blue": {
+      "common_name": "blue",
+      "gsd": 2.047,
+      "center_wavelength": 0.478,
+      "full_width_half_maximum": 0.073
+    },
+    "green": {
+      "common_name": "green",
+      "gsd": 2.047,
+      "center_wavelength": 0.546,
+      "full_width_half_maximum": 0.080
+    },
+    "yellow": {
+      "common_name": "yellow",
+      "gsd": 2.047,
+      "center_wavelength": 0.608,
+      "full_width_half_maximum": 0.048
+    },
+    "red": {
+      "common_name": "red",
+      "gsd": 2.047,
+      "center_wavelength": 0.659,
+      "full_width_half_maximum": 0.070
+    },
+    "rededge": {
+      "common_name": "rededge",
+      "gsd": 2.047,
+      "center_wavelength": 0.724,
+      "full_width_half_maximum": 0.050
+    },
+    "nir1": {
+      "common_name": "nir1",
+      "gsd": 2.047,
+      "center_wavelength": 0.833,
+      "full_width_half_maximum": 0.136
+    },
+    "nir2": {
+      "common_name": "nir2",
+      "gsd": 2.047,
+      "center_wavelength": 0.949,
+      "full_width_half_maximum": 0.187
+    },
+    "pan": {
+     "common_name": "pan",
+        "gsd": 0.512,
+        "center_wavelength": 0.627,
+        "full_width_half_maximum": 0.361
+    }
+  },
+  "assets": {
+    "multispectral_image": {
+      "name": "geotiff image",
+      "description": "the radiometrically corrected multispectral image for the scene",
+      "type": "geotiff",
+      "eo:bands": [
+        "coastal",
+        "blue",
+        "green",
+        "yellow",
+        "red",
+        "rededge",
+        "nir1",
+        "nir2"
+      ],
+      "required": false
+    },
+    "panchromatic_image": {
+      "name": "geotiff image",
+      "description": "the radiometrically corrected multispectral image for the scene",
+      "type": "geotiff",
+      "eo:bands": [
+        "pan"
+      ],
+      "required": false
+    },
+    "imd": {
+      "name": "image metadata",
+      "description": "The image metadata for the 'image' asset in imd format",
+      "type": "imd",
+      "required": true
+    },
+    "imd_xml": {
+      "name": "image metadata",
+      "description": "The image metadata for the 'image' asset in xml format",
+      "type": "xml",
+      "required": true
+    },
+    "til": {
+      "name": "til",
+      "description": "The til virtual raster file",
+      "type": "til",
+      "required": true
+    },
+    "att": {
+      "name": "attitude file",
+      "description": "The attitude file for the satellite at collection time",
+      "type": "att",
+      "required": true
+    },
+    "eph": {
+      "name": "ephemeral data",
+      "description": "the ephemeral file for the collection",
+      "type": "eph",
+      "required": true
+    },
+    "geo": {
+      "name": "geospatial data",
+      "description": "the aproximate geospatial metadata",
+      "type": "geo",
+      "required": true
+    },
+    "rpb": {
+      "name": "rational polynomial metadata",
+      "description": "the RPC coordinates for the image",
+      "type": "rpb",
+      "required": true
+    },
+    "thumbnail": {
+      "name": "thumbnail",
+      "description": "the thumbnail representation of the image",
+      "type": "jpeg",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "AOI_4_Shanghai_MUL-PanSharpen",
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          121.74843239995295,
+          30.827565900478866
+        ],
+        [
+          121.74843239995295,
+          31.427311500000005
+        ],
+        [
+          121.59016920000002,
+          31.427311500000005
+        ],
+        [
+          121.59016920000002,
+          30.827565900478866
+        ],
+        [
+          121.74843239995295,
+          30.827565900478866
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "eo:sun_azimuth": "1.115000000000000e+02",
+    "eo:cloud_cover": "0.000000000000000e+00",
+    "eo:off_nadir": "1.970000000000000e+01",
+    "eo:azimuth": "9.259999999999999e+01",
+    "eo:platform": "WV03",
+    "eo:sun_elevation": "7.109999999999999e+01",
+    "eo:gsd": "1.370000000000000e+00",
+    "eo:crs": "",
+    "dg:catalog_id": "104001000C924900",
+    "dg:platform": "WV03",
+    "dg:product_level": "LV2A",
+    "datetime": "2015-06-06T02:35:27.054755Z",
+    "provider": "DigitalGlobe",
+    "license": "CC 4.0 BY-SA"
+  },
+  "assets": {
+    "MUL-PanSharpen": {
+      "href": "s3://spacenet-dataset/AOI_4_Shanghai/srcData/rasterData/AOI_4_Shanghai_MUL-PanSharpen_Cloud.tif",
+      "type": "cog",
+      "name": "8-Band Pan Sharpened COG"
+    },
+    "imd": {
+      "href": "s3://spacenet-dataset/AOI_4_Shanghai/srcData/rasterData/Shanghai_Imagery/15JUN06023537-M2AS-055649178010_01_P001.XML",
+      "type": "imd file",
+      "name": "imd metadata"
+    },
+    "thumbnail": {
+      "href": "s3://spacenet-dataset/AOI_4_Shanghai/srcData/rasterData/Shanghai_Imagery/15JUN06023537-P2AS-055649178010_01_P001-BROWSE.JPG",
+      "type": "thumbnail",
+      "name": "thumbnail"
+    }
+  },
+  "links": {
+    "self": {
+      "rel": "self",
+      "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_4_Shanghai_MUL-PanSharpen_Cloud.json"
+    },
+    "collection": {
+      "rel": "collection",
+      "href": "s3://spacenet-stac/spacenet-dataset.json"
+    }
+  }
+}

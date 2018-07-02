@@ -1,0 +1,74 @@
+{
+  "id": "AOI_3_Paris_MUL-PanSharpen",
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          2.313108899989663,
+          48.449250900485815
+        ],
+        [
+          2.313108899989663,
+          49.0767795
+        ],
+        [
+          2.1109464000000004,
+          49.0767795
+        ],
+        [
+          2.1109464000000004,
+          48.449250900485815
+        ],
+        [
+          2.313108899989663,
+          48.449250900485815
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "eo:sun_azimuth": "1.669000000000000e+02",
+    "eo:cloud_cover": "0.000000000000000e+00",
+    "eo:off_nadir": "1.870000000000000e+01",
+    "eo:azimuth": "2.464000000000000e+02",
+    "eo:platform": "WV03",
+    "eo:sun_elevation": "3.290000000000000e+01",
+    "eo:gsd": "1.365000000000000e+00",
+    "eo:crs": "",
+    "dg:catalog_id": "1040010018805C00",
+    "dg:platform": "WV03",
+    "dg:product_level": "LV2A",
+    "datetime": "2016-02-29T11:19:13.031916Z",
+    "provider": "DigitalGlobe",
+    "license": "CC 4.0 BY-SA"
+  },
+  "assets": {
+    "MUL-PanSharpen": {
+      "href": "s3://spacenet-dataset/AOI_3_Paris/srcData/rasterData/AOI_3_Paris_MUL-PanSharpen_Cloud.tif",
+      "type": "cog",
+      "name": "8-Band Pan Sharpened COG"
+    },
+    "imd": {
+      "href": "s3://spacenet-dataset/AOI_3_Paris/srcData/rasterData/Paris_Imagery/16FEB29111913-M2AS-055649178040_01_P001.XML",
+      "type": "imd file",
+      "name": "imd metadata"
+    },
+    "thumbnail": {
+      "href": "s3://spacenet-dataset/AOI_3_Paris/srcData/rasterData/Paris_Imagery/16FEB29111913-M2AS-055649178040_01_P001-BROWSE.JPG",
+      "type": "thumbnail",
+      "name": "thumbnail"
+    }
+  },
+  "links": {
+    "self": {
+      "rel": "self",
+      "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_3_Paris_MUL-PanSharpen_Cloud.json"
+    },
+    "collection": {
+      "rel": "collection",
+      "href": "s3://spacenet-stac/spacenet-dataset.json"
+    }
+  }
+}

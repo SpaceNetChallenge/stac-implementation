@@ -1,0 +1,38 @@
+{
+      "name": "SpaceNet dataset",
+      "description": "A corpus of commercial satellite imagery and labeled training data to foster innovation in the development of computer vision algorithms. Imagery is provided under Creative Commons licenses, free of charge, with either CC-BY-SA or CC-BY-NC.",
+
+  "license": {
+    "name": "Creative Commons By Share Alike 4.0",
+    "short_name" : "CC-BY-SA-4.0",
+    "link" : "https://creativecommons.org/licenses/by-sa/4.0/legalcode",
+    "copyright": "SpaceNet"
+  },
+
+
+    "links": [
+        { "rel": "self", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset.json" },
+        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_2_Vegas_MUL-PanSharpen_Cloud.json" },
+        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_3_Paris_MUL-PanSharpen_Cloud.json" },
+        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_4_Shanghai_MUL-PanSharpen_Cloud.json" },
+        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_5_Khartoum_MUL-PanSharpen_Cloud.json" },
+        { "rel": "root", "href": "spacenet-dataset.json"}
+    ],
+
+    "contact": {
+        "name": "SpaceNet Team",
+        "email": "@dlindenbaum",
+        "url": "http://spacenetchallenge.github.io"
+    },
+
+    "formats": ["geotiff", "cog"],
+
+    "keywords": ["aerial", "machine-learning", "deep learning"],
+    "homepage": "http://spacenetchallenge.github.io",
+
+    "provider": {
+        "scheme": "s3",
+        "region": "us-east-1",
+        "requesterPays": "false"
+    }
+}

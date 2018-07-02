@@ -1,0 +1,38 @@
+{
+      "name": "IARPA Multi-View Stereo 3D Mapping Challenge",
+      "description": "This data set includes DigitalGlobe WorldView-3 panchromatic and multispectral images of a 100 square kilometer area near San Fernando, Argentina. We also provide 20cm airborne lidar ground truth data for a 20 square kilometer subset of this area and performance analysis software to assess accuracy and completeness metrics. Commercial satellite imagery is provided courtesy of DigitalGlobe, and ground truth lidar is provided courtesy of IARPA.  This data supported the IARPA Multi-View Stereo 3D Mapping Challenge and is now made publicly available with no restrictions to support continued research. JHU/APL does not plan to maintain an online benchmark leaderboard, but we welcome your feedback and would love to hear about what you’re doing with the data and include your published results on this page.  SpaceNet is hosting the Multi-View Stereo 3D Mapping dataset in the spacenet repository to ensure easy access to the data.",
+
+  "license": {
+    "name": "Public Release; Courtesy of Digital Globe",
+    "short_name" : "Public Release",
+    "link" : "https://spacenetchallenge.github.io/datasets/mvs_summary.html",
+    "copyright": "Public"
+  },
+
+
+    "links": [
+        { "rel": "self", "href": "https://s3.amazonaws.com/spacenet-stac/mvs.json" },
+        { "rel": "", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_2_Vegas_MUL-PanSharpen_Cloud.json" },
+        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_3_Paris_MUL-PanSharpen_Cloud.json" },
+        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_4_Shanghai_MUL-PanSharpen_Cloud.json" },
+        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_5_Khartoum_MUL-PanSharpen_Cloud.json" },
+        { "rel": "root", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset.json"}
+    ],
+
+    "contact": {
+        "name": "SpaceNet Team",
+        "email": "@dlindenbaum",
+        "url": "http://spacenetchallenge.github.io"
+    },
+
+    "formats": ["geotiff", "cog"],
+
+    "keywords": ["aerial", "machine-learning", "deep learning"],
+    "homepage": "http://spacenetchallenge.github.io",
+
+    "provider": {
+        "scheme": "s3",
+        "region": "us-east-1",
+        "requesterPays": "false"
+    }
+}
