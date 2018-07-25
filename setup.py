@@ -2,7 +2,7 @@ import os
 
 from setuptools import setup, find_packages
 
-with open('spacenet_stac/__init__.py') as f:
+with open('stac_tools/__init__.py') as f:
     for line in f:
         if line.find("__version__") >= 0:
             version = line.split("=")[1].strip()

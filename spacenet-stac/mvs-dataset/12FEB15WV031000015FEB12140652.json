@@ -1,0 +1,62 @@
+{
+  "id": "12FEB15WV031000015FEB12140652",
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -58.49400703147204,
+          -34.58175818603504
+        ],
+        [
+          -58.49400703147204,
+          -34.383523803138694
+        ],
+        [
+          -58.71716889009199,
+          -34.383523803138694
+        ],
+        [
+          -58.71716889009199,
+          -34.58175818603504
+        ],
+        [
+          -58.49400703147204,
+          -34.58175818603504
+        ]
+      ]
+    ]
+  },
+  "assets": {
+    "25DEC15WV031000015DEC25141705-P1BS-500526006020_01_P001_________AAE_0AAAAABPAAW0.rm": {
+      "href": "s3://spacenet-dataset/mvs_dataset/WV3/PAN/25DEC15WV031000015DEC25141705-P1BS-500526006020_01_P001_________AAE_0AAAAABPAAW0.rm",
+      "type": ".rm",
+      "name": "Pan Band 1B RM metadata file"
+    },
+    "25DEC15WV031000015DEC25141705-P1BS-500526006020_01_P001_________AAE_0AAAAABPAAW0.NTF": {
+      "href": "s3://spacenet-dataset/mvs_dataset/WV3/PAN/25DEC15WV031000015DEC25141705-P1BS-500526006020_01_P001_________AAE_0AAAAABPAAW0.NTF",
+      "type": ".NTF",
+      "name": "Pan Band 1B NITF"
+    },
+    "25DEC15WV031000015DEC25141705-P1BS-500526006020_01_P001_________AAE_0AAAAABPAAW0.tar": {
+      "href": "s3://spacenet-dataset/mvs_dataset/WV3/PAN/25DEC15WV031000015DEC25141705-P1BS-500526006020_01_P001_________AAE_0AAAAABPAAW0.tar",
+      "type": ".tar",
+      "name": "Pan Band 1B Meta Data Archive"
+    }
+  },
+  "links": {
+    "self": {
+      "rel": "self",
+      "href": "12FEB15WV031000015FEB12140652.json"
+    },
+    "collection": {
+      "rel": "collection",
+      "href": "../spacenet-collections/spacenet-WV3-1B.json"
+    },
+    "catalog": {
+      "rel": "catalog",
+      "href": "../mvs-dataset.json"
+    }
+  }
+}

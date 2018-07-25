@@ -1,0 +1,73 @@
+{
+  "id": "06FEB15WV031000015FEB06141035",
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -58.514611369584884,
+          -34.542041304905986
+        ],
+        [
+          -58.514611369584884,
+          -34.398704582406104
+        ],
+        [
+          -58.70614324395622,
+          -34.398704582406104
+        ],
+        [
+          -58.70614324395622,
+          -34.542041304905986
+        ],
+        [
+          -58.514611369584884,
+          -34.542041304905986
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "eo:sun_azimuth": "062.2",
+    "eo:cloud_cover": "000",
+    "eo:off_nadir": "24.29",
+    "eo:azimuth": "270",
+    "eo:platform": "WV03",
+    "eo:sun_elevation": "+57.6",
+    "eo:gsd": 147.32,
+    "eo:crs": "",
+    "dg:catalog_id": "20150206141035",
+    "dg:platform": "WV03",
+    "dg:product_level": "LV1B",
+    "datetime": "2015-02-06T14:10:35",
+    "provider": "DigitalGlobe",
+    "license": "Commercial satellite imagery in the MVS benchmark data set was provided courtesy of DigitalGlobe."
+  },
+  "assets": {
+    "06FEB15WV031000015FEB06141035-M1BS-500497283080_01_P001_________GA_E0AAAAAAKAAK0.NTF": {
+      "href": "s3://spacenet-dataset/mvs_dataset/WV3/MSI/06FEB15WV031000015FEB06141035-M1BS-500497283080_01_P001_________GA_E0AAAAAAKAAK0.NTF",
+      "type": ".NTF",
+      "name": "Multi-Spectral 1B NITF"
+    },
+    "06FEB15WV031000015FEB06141035-M1BS-500497283080_01_P001_________GA_E0AAAAAAKAAK0.tar": {
+      "href": "s3://spacenet-dataset/mvs_dataset/WV3/MSI/06FEB15WV031000015FEB06141035-M1BS-500497283080_01_P001_________GA_E0AAAAAAKAAK0.tar",
+      "type": ".tar",
+      "name": "Multi-Spectral 1B Meta Data Archive"
+    }
+  },
+  "links": {
+    "self": {
+      "rel": "self",
+      "href": "06FEB15WV031000015FEB06141035_M1BS.json"
+    },
+    "collection": {
+      "rel": "collection",
+      "href": "../spacenet-collections/spacenet-WV3-1B.json"
+    },
+    "catalog": {
+      "rel": "catalog",
+      "href": "../mvs-dataset.json"
+    }
+  }
+}

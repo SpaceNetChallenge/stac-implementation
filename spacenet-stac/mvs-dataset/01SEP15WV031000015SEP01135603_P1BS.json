@@ -1,0 +1,78 @@
+{
+  "id": "01SEP15WV031000015SEP01135603",
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -58.51957764095696,
+          -34.543499431690186
+        ],
+        [
+          -58.51957764095696,
+          -34.40247372289969
+        ],
+        [
+          -58.70182735414503,
+          -34.40247372289969
+        ],
+        [
+          -58.70182735414503,
+          -34.543499431690186
+        ],
+        [
+          -58.51957764095696,
+          -34.543499431690186
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "eo:sun_azimuth": "039.0",
+    "eo:cloud_cover": "000",
+    "eo:off_nadir": "24.38",
+    "eo:azimuth": "270",
+    "eo:platform": "WV03",
+    "eo:sun_elevation": "+39.0",
+    "eo:gsd": 36.83,
+    "eo:crs": "",
+    "dg:catalog_id": "20150901135603",
+    "dg:platform": "WV03",
+    "dg:product_level": "LV1B",
+    "datetime": "2015-09-01T13:56:03",
+    "provider": "DigitalGlobe",
+    "license": "Commercial satellite imagery in the MVS benchmark data set was provided courtesy of DigitalGlobe."
+  },
+  "assets": {
+    "01SEP15WV031000015SEP01135603-P1BS-500497284040_01_P001_________AAE_0AAAAABPABP0.NTF": {
+      "href": "s3://spacenet-dataset/mvs_dataset/WV3/PAN/01SEP15WV031000015SEP01135603-P1BS-500497284040_01_P001_________AAE_0AAAAABPABP0.NTF",
+      "type": ".NTF",
+      "name": "Pan Band 1B NITF"
+    },
+    "01SEP15WV031000015SEP01135603-P1BS-500497284040_01_P001_________AAE_0AAAAABPABP0.tar": {
+      "href": "s3://spacenet-dataset/mvs_dataset/WV3/PAN/01SEP15WV031000015SEP01135603-P1BS-500497284040_01_P001_________AAE_0AAAAABPABP0.tar",
+      "type": ".tar",
+      "name": "Pan Band 1B Meta Data Archive"
+    },
+    "01SEP15WV031000015SEP01135603-P1BS-500497284040_01_P001_________AAE_0AAAAABPABP0.rm": {
+      "href": "s3://spacenet-dataset/mvs_dataset/WV3/PAN/01SEP15WV031000015SEP01135603-P1BS-500497284040_01_P001_________AAE_0AAAAABPABP0.rm",
+      "type": ".rm",
+      "name": "Pan Band 1B RM metadata file"
+    }
+  },
+  "links": {
+    "self": {
+      "rel": "self",
+      "href": "01SEP15WV031000015SEP01135603_P1BS.json"
+    },
+    "collection": {
+      "rel": "collection",
+      "href": "../spacenet-collections/spacenet-WV3-1B.json"
+    },
+    "catalog": {
+      "rel": "catalog",
+      "href": "../mvs-dataset.json"
+    }
+  }
+}

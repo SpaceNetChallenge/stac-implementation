@@ -11,12 +11,11 @@
 
 
     "links": [
-        { "rel": "self", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset.json" },
-        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_2_Vegas_MUL-PanSharpen_Cloud.json" },
-        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_3_Paris_MUL-PanSharpen_Cloud.json" },
-        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_4_Shanghai_MUL-PanSharpen_Cloud.json" },
-        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_5_Khartoum_MUL-PanSharpen_Cloud.json" },
-        { "rel": "root", "href": "spacenet-dataset.json"}
+        { "rel": "self", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-repository.json" },
+        { "rel": "child", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-challenge.json" },
+        { "rel": "child", "href": "https://s3.amazonaws.com/spacenet-stac/mvs-dataset.json" },
+        { "rel": "root", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-repository.json" }
+
     ],
 
     "contact": {
