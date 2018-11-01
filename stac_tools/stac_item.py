@@ -6,6 +6,7 @@ import boto3
 import rasterio
 from rasterio import features
 from datetime import datetime
+
 CM_PER_INCH = 2.54
 
 
@@ -22,19 +23,43 @@ def iterate_OverXML(root, recursionTagList=[], metaDataStruct={}):
 
 class spacenetStacItem:
     
-    def __init__(self, rasterPath, provider, license, idStr, assetDict, imdPath=[], vrtPath=[], links=[]):
+    def __init__(self, rasterPath, title, provider, license, idStr, assetDict, 
+                 imdPath=[], 
+                 vrtPath=[], 
+                 links=[],
+                collection_base=''):
     
         self.rasterPath = rasterPath
         self.provider   = provider
-        self.license    = license
         self.id         = idStr
-        self.stac_item   = {"id": idStr,
-                            "type": "Feature",
-                            "geometry": self.calcGeometry()  
-                           }
+        self.title      = title
         
-        self.stac_item['properties']=self.createProperties_EO(imdPath=imdPath, vrtPath=vrtPath)
+        if collection_base !='':
+            with open(collection_base) as f:
+                self.stac_item = json.load(f)
+        else:
+            self.stac_item = {
+                'properties': []
+            }
+        
+        self.stac_item.update(
+            {"id": idStr,
+             "type": "Feature",
+             "geometry": self.calcGeometry(),
+             "title": self.title
+            }
+                             )
+        
+        
+        
+        
+        
+        self.stac_item['properties'].update(
+                        self.createProperties_EO(imdPath=imdPath, vrtPath=vrtPath)
+        )
+                                            
             
+        
         
             
         self.stac_item['assets']=assetDict
@@ -105,8 +130,6 @@ class spacenetStacItem:
             "dg:platform": metaDataStruct['SATID'],
             "dg:product_level": metaDataStruct['PRODUCTLEVEL'],
             "datetime": metaDataStruct['FIRSTLINETIME'],
-            "provider": provider,
-            "license": license
             }
 
         return eoDict

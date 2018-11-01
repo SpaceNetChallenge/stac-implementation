@@ -1,12 +1,12 @@
 {
-      "name": "SpaceNet dataset",
+      "name": "SpaceNet Dataset",
       "description": "A corpus of commercial satellite imagery and labeled training data to foster innovation in the development of computer vision algorithms. Imagery is provided under Creative Commons licenses, free of charge, with either CC-BY-SA or CC-BY-NC.",
 
   "license": {
-    "name": "Creative Commons By Share Alike 4.0",
+    "name": "Creative Commons Share Alike 4.0",
     "short_name" : "CC-BY-SA-4.0",
     "link" : "https://creativecommons.org/licenses/by-sa/4.0/legalcode",
-    "copyright": "SpaceNet"
+    "copyright": "SpaceNet LLC"
   },
 
 
