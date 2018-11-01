@@ -1,0 +1,133 @@
+{
+    "id": "wv2-2a-collection",
+    "title": "WorldView-2 Ortho 2A collection",
+    "description": "WorldView-2 Imagery imagery radiometrically and atmosphericly calibrated and orthorectified using Digital Elevation Model (DEM) data to correct relief displacement.",
+    "keywords": "worldview",
+    "version": "0.1.0",
+    "stac_version": "0.6.0",
+    "extent": {
+        "spatial": [
+            -180,
+            -90,
+            180,
+            90
+        ],
+        "temporal": [
+            "2009-08-2009",
+            null
+        ]
+    },
+    "providers": [
+        {
+            "name": "Digital Globe",
+            "url": "https://www.digitalglobe.com/",
+            "roles": ["producer", "licensor"]
+        },
+        {
+            "name": "SpaceNet LLC",
+            "url": "https://spacenetchallenge.github.io/",
+            "roles": ["processor"]
+        },
+        {
+            "name": "Earth On AWS",
+            "url": "https://registry.opendata.aws/spacenet/",
+            "roles": ["host"]
+        },
+        {
+            "name": "SpaceNet LLC",
+            "url": "https://spacenetchallenge.github.io/",
+            "roles": ["processor"]
+        }
+    ],
+    "license": "CC-BY-SA-4.0",
+    "properties": {
+        "eo:gsd": 0.45,
+        "eo:platform": "WorldView-2",
+        "eo:constellation": "WorldView",
+        "eo:instrument": "WorldView-2",
+        "eo:bands": [
+            {
+                "id": "B1",
+                "common_name": "coastal",
+                "gsd": 1.85,
+                "center_wavelength": 0.425,
+                "full_width_half_max": 0.04
+            },
+            {
+                "id": "B2",
+                "common_name": "blue",
+                "gsd": 1.85,
+                "center_wavelength": 0.48,
+                "full_width_half_max": 0.06
+            },
+            {
+                "id": "B3",
+                "common_name": "green",
+                "gsd": 1.85,
+                "center_wavelength": 0.545,
+                "full_width_half_max": 0.07
+            },
+            {
+                "id": "B4",
+                "common_name": "yellow",
+                "gsd": 1.85,
+                "center_wavelength": 0.605,
+                "full_width_half_max": 0.04
+            },
+            {
+                "id": "B5",
+                "common_name": "red",
+                "gsd": 1.85,
+                "center_wavelength": 0.66,
+                "full_width_half_max": 0.06
+            },
+            {
+                "id": "B6",
+                "common_name": "red-edge",
+                "gsd": 1.85,
+                "center_wavelength": 0.725,
+                "full_width_half_max": 0.04
+            },
+            {
+                "id": "B7",
+                "common_name": "nir",
+                "gsd": 1.85,
+                "center_wavelength": 0.8325,
+                "full_width_half_max": 0.125
+            },
+            {
+                "id": "B8",
+                "common_name": "nir095",
+                "gsd": 1.85,
+                "center_wavelength": 0.950,
+                "full_width_half_max": 0.180
+            },
+            {
+                "id": "B9",
+                "common_name": "pan",
+                "gsd": 0.46,
+                "center_wavelength": 0.625,
+                "full_width_half_max": 0.35
+            }
+
+        ]
+    },
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://<endpoint>/stac/collections/landsat-8-l1"
+        },
+        {
+            "rel": "parent",
+            "href": "https://<endpoint>/stac"
+        },
+        {
+            "rel": "root",
+            "href": "https://<endpoint>/stac"
+        },
+        {
+            "rel": "child",
+            "href": "https://<endpoint>/stac/collections/landsat-8-l1/items"
+        }
+    ]
+}
