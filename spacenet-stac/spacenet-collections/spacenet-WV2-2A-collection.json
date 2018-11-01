@@ -42,9 +42,9 @@
     "license": "CC-BY-SA-4.0",
     "properties": {
         "eo:gsd": 0.45,
-        "eo:platform": "WorldView-2",
-        "eo:constellation": "WorldView",
-        "eo:instrument": "WorldView-2",
+       "eo:platform": "WORLDVIEW02",
+        "eo:constellation": "WORLDVIEW",
+        "eo:instrument": "WORLDVIEW02",
         "eo:bands": [
             {
                 "id": "B1",
