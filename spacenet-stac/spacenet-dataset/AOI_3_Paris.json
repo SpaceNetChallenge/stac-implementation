@@ -1,0 +1,118 @@
+{
+  "properties": {
+    "eo:sun_azimuth": "1.669000000000000e+02",
+    "eo:cloud_cover": "0.000000000000000e+00",
+    "eo:off_nadir": "1.870000000000000e+01",
+    "eo:azimuth": "2.464000000000000e+02",
+    "eo:platform": "WV03",
+    "eo:sun_elevation": "3.290000000000000e+01",
+    "eo:gsd": "1.365000000000000e+00",
+    "eo:crs": "",
+    "dg:catalog_id": "1040010018805C00",
+    "dg:platform": "WV03",
+    "dg:product_level": "LV2A",
+    "datetime": "2016-02-29T11:19:13.031916Z"
+  },
+  "id": "16FEB29111913-M2AS-055649178040_01_P001",
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          2.313108899989663,
+          48.449250900485815
+        ],
+        [
+          2.313108899989663,
+          49.0767795
+        ],
+        [
+          2.1109464000000004,
+          49.0767795
+        ],
+        [
+          2.1109464000000004,
+          48.449250900485815
+        ],
+        [
+          2.313108899989663,
+          48.449250900485815
+        ]
+      ]
+    ]
+  },
+  "title": "SpaceNet AOI 3 Paris",
+  "assets": {
+    "thumbnail": {
+      "href": "s3://spacenet-dataset/AOI_3_Paris/srcData/rasterData/Paris_Imagery/16FEB29111913-M2AS-055649178040_01_P001-BROWSE.JPG",
+      "type": "image/jpeg"
+    },
+    "imd": {
+      "href": "s3://spacenet-dataset/AOI_3_Paris/srcData/rasterData/Paris_Imagery/16FEB29111913-M2AS-055649178040_01_P001.XML"
+    },
+    "imd_xml": {
+      "href": "s3://spacenet-dataset/AOI_3_Paris/srcData/rasterData/Paris_Imagery/16FEB29111913-M2AS-055649178040_01_P001.XML",
+      "type": "application/xml"
+    },
+    "PAN": {
+      "href": "s3://spacenet-dataset/AOI_3_Paris/srcData/rasterData/AOI_3_Paris_PAN_Cloud.tif",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "eo:bands": [
+        8
+      ]
+    },
+    "MUL": {
+      "href": "s3://spacenet-dataset/AOI_3_Paris/srcData/rasterData/AOI_3_Paris_MUL_Cloud.tif",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "eo:bands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "MUL-PanSharpen": {
+      "href": "s3://spacenet-dataset/AOI_3_Paris/srcData/rasterData/AOI_3_Paris_MUL-PanSharpen_Cloud.tif",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "eo:bands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "RGB-PanSharpen": {
+      "href": "s3://spacenet-dataset/AOI_3_Paris/srcData/rasterData/AOI_3_Paris_RGB-PanSharpen_Cloud.tif",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "eo:bands": [
+        4,
+        2,
+        1
+      ]
+    }
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_3_Paris.json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-challenge.json",
+      "type": "text/html"
+    },
+    {
+      "rel": "collection",
+      "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-collections/spacenet-WV3-2A-collection.json"
+    }
+  ]
+}

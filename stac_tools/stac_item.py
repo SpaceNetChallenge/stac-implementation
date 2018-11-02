@@ -33,13 +33,14 @@ class spacenetStacItem:
         self.provider   = provider
         self.id         = idStr
         self.title      = title
+        self.license    = license
         
         if collection_base !='':
             with open(collection_base) as f:
                 self.stac_item = json.load(f)
         else:
             self.stac_item = {
-                'properties': []
+                'properties': {}
             }
         
         self.stac_item.update(

@@ -1,6 +1,8 @@
 {
-      "name": "SpaceNet dataset",
-      "description": "A corpus of commercial satellite imagery and labeled training data to foster innovation in the development of computer vision algorithms. Imagery is provided under Creative Commons licenses, free of charge, with either CC-BY-SA or CC-BY-NC.",
+    "stac_version": "0.6.0",
+    "id": "SpaceNet Challenge Source Imagery"
+    "title": "SpaceNet dataset",
+    "description": "A corpus of commercial satellite imagery and labeled training data to foster innovation in the development of computer vision algorithms. Imagery is provided under Creative Commons licenses, free of charge, with either CC-BY-SA or CC-BY-NC.",
 
   "license": {
     "name": "Creative Commons By Share Alike 4.0",
@@ -11,12 +13,12 @@
 
 
     "links": [
-        { "rel": "self", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset.json" },
-        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_2_Vegas_MUL-PanSharpen_Cloud.json" },
-        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_3_Paris_MUL-PanSharpen_Cloud.json" },
-        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_4_Shanghai_MUL-PanSharpen_Cloud.json" },
-        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_5_Khartoum_MUL-PanSharpen_Cloud.json" },
-        { "rel": "root", "href": "spacenet-dataset.json"}
+        { "rel": "self", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-challenge.json" },
+        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_2_Vegas.json" },
+        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_3_Paris.json" },
+        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_4_Shanghai.json" },
+        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_5_Khartoum.json" },
+        { "rel": "root", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-repository.json"}
     ],
 
     "contact": {
