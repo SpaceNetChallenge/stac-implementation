@@ -103,16 +103,16 @@
   "links": [
     {
       "rel": "self",
-      "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_3_Paris.json"
+      "href": "https://spacenet-stac.s3.amazonaws.com/spacenet-dataset/AOI_3_Paris.json"
     },
     {
       "rel": "parent",
-      "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-challenge.json",
+      "href": "https://spacenet-stac.s3.amazonaws.com/spacenet-challenge.json",
       "type": "text/html"
     },
     {
       "rel": "collection",
-      "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-collections/spacenet-WV3-2A-collection.json"
+      "href": "https://spacenet-stac.s3.amazonaws.com/spacenet-collections/spacenet-WV3-2A-collection.json"
     }
   ]
 }

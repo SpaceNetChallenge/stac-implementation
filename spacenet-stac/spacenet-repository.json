@@ -13,10 +13,10 @@
 
 
     "links": [
-        { "rel": "self", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-repository.json" },
-        { "rel": "child", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-challenge.json" },
-        { "rel": "child", "href": "https://s3.amazonaws.com/spacenet-stac/mvs-dataset.json" },
-        { "rel": "root", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-repository.json" }
+        { "rel": "self", "href": "https://spacenet-stac.s3.amazonaws.com/spacenet-repository.json" },
+        { "rel": "child", "href": "https://spacenet-stac.s3.amazonaws.com/spacenet-challenge.json" },
+        { "rel": "child", "href": "https://spacenet-stac.s3.amazonaws.com/mvs-dataset.json" },
+        { "rel": "root", "href": "https://spacenet-stac.s3.amazonaws.com/spacenet-repository.json" }
 
     ],
 

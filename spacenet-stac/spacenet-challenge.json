@@ -13,12 +13,12 @@
 
 
     "links": [
-        { "rel": "self", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-challenge.json" },
-        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_2_Vegas.json" },
-        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_3_Paris.json" },
-        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_4_Shanghai.json" },
-        { "rel": "item", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-dataset/AOI_5_Khartoum.json" },
-        { "rel": "root", "href": "https://s3.amazonaws.com/spacenet-stac/spacenet-repository.json"}
+        { "rel": "self", "href": "https://spacenet-stac.s3.amazonaws.com/spacenet-challenge.json" },
+        { "rel": "item", "href": "https://spacenet-stac.s3.amazonaws.com/spacenet-dataset/AOI_2_Vegas.json" },
+        { "rel": "item", "href": "https://spacenet-stac.s3.amazonaws.com/spacenet-dataset/AOI_3_Paris.json" },
+        { "rel": "item", "href": "https://spacenet-stac.s3.amazonaws.com/spacenet-dataset/AOI_4_Shanghai.json" },
+        { "rel": "item", "href": "https://spacenet-stac.s3.amazonaws.com/spacenet-dataset/AOI_5_Khartoum.json" },
+        { "rel": "root", "href": "https://spacenet-stac.s3.amazonaws.com/spacenet-repository.json"}
     ],
 
     "contact": {
